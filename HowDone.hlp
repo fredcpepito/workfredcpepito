@@ -1,0 +1,55 @@
+On your computer create a folder that will host your project, go it to it and 
+init a git project, we will create a minimal package.json file, .travis.yml 
+to hold the Travis configuration, a .gitignore and a docs folder which will 
+contain our Vuepress configuration and content. 
+Then Link it to your working repository by adding the correct remote origin.
+
+
+$ mkdir <folder name>
+$ cd <folder name>
+$ git init
+$ touch package.json .travis.yml .gitignore
+$ mkdir -p docs/.vuepress
+$ cd docs/.vuepress
+
+The resulting folder structure is:
+└── <folder name>
+  ├── docs
+  |   └──.vuepress
+  |       └── config.js
+  ├── .gitignore
+  ├── .travis.yml
+  ├── package.json
+  └── README.md //optional
+
+Getting Started and How to install vuepress
+COMPATIBILITY NOTE
+
+VuePress requires Node.js >= 8.
+
+#Global Installation
+If you only want to play around with VuePress, you can install it globally:
+
+# install globally  "Need not do this if previously done."
+yarn global add vuepress # OR 
+$ npm install -g vuepress
+
+# create the project folder
+$ mkdir vuepress-starter && cd vuepress-starter
+
+# create a markdown file
+$ echo '# Hello VuePress' > README.md
+
+# start writing
+$ vuepress dev
+
+"Create a folder .vuepress and create config.js in it."
+$ mkdir .vuepress && cd .vuepress 
+"right click and create config"
+
+
+-----------------------------------------------------
+By the way: javascript database 
+RxDB https://rxdb.info/rx-database.html#pouchSettings 
+https://rxdb.info/
+------------------------------------------------------V
